@@ -1,0 +1,28 @@
+from trabajo.models import Provincia
+
+Provincia(nombre='Buenos Aires').save()
+Provincia(nombre='Ciudad Autónoma de Buenos Aires').save()
+Provincia(nombre='Catamarca').save()
+Provincia(nombre='Chaco').save()
+Provincia(nombre='Chubut').save()
+Provincia(nombre='Córdoba').save()
+Provincia(nombre='Corrientes').save()
+Provincia(nombre='Entre Ríos').save()
+Provincia(nombre='Formosa').save()
+Provincia(nombre='Jujuy').save()
+Provincia(nombre='La Pampa').save()
+Provincia(nombre='Mendoza').save()
+Provincia(nombre='Misiones').save()
+Provincia(nombre='Neuquén').save()
+Provincia(nombre='Río Negro').save()
+Provincia(nombre='Salta').save()
+Provincia(nombre='San Juan').save()
+Provincia(nombre='San Luis').save()
+Provincia(nombre='Santa Cruz').save()
+Provincia(nombre='Santa Fe').save()
+Provincia(nombre='Santiago del Estero').save()
+Provincia(nombre='Tierra del Fuego').save()
+Provincia(nombre='Tucumán').save()
+
+print("Se cargo con éxito los usuarios de pruebas")
+
