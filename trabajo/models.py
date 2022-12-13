@@ -1,5 +1,6 @@
 from django.db import models
 from .choices import sexos
+from datetime import date, time, datetime
 
 # Create your models here.
 class Provincia(models.Model):
@@ -35,7 +36,7 @@ class Familia(models.Model):
     apellido_materno=models.CharField (max_length=100, verbose_name= 'Apellido Materno')
     direccion= models.CharField (max_length=100, verbose_name= 'Dirección')
     ciudad=models.ForeignKey(Ciudad, null=True, on_delete=models.RESTRICT )
-    fecha_nacimiento=models.DateField(verbose_name= 'fecha de Nacimiento')
+    fecha_nacimiento=models.DateField(verbose_name= 'Fecha de Nacimiento' )
     sexo=models.CharField(max_length=1, choices=sexos, default='F' )
 
     def nombre_completo(self):
