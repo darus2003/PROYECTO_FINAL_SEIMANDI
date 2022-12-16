@@ -1,22 +1,34 @@
 # PROYECTO_FINAL_SEIMANDI
 
-Ingresando por el menu Saluda ----> http://127.0.0.1:8000/saludar/ , llevara a cada formulario creado. 
+Trabajo Realizado en Visual Studio Code y respaldado en github. 
 
-se crearon 3 moodelos
+Se trabaja sobre la apps creada con el nombre "trabajo", creando modelos para llevar registro de los familiares. 
 
-1-Provincias: este es importado completo, 
-2-ciudad: posee un menu de alta, que esta vinculado por el provincia_id, en el mismo no encontre como se muestre por nombre y no asi por el Id, tiene su formulario para dar de alta:
+Para su ejecucion trabajar con la carpeta PROYECTO>PROYECTO_FINAL_SEIMANDI.
 
-                                 http://127.0.0.1:8000/saludar/
+Detalle de los modelos creados: 
 
-3-Familia: vinculado con ciudad, idem al punto de arriba, me muestra el id, con su formulario de alta
+a-Pronvicias: este modelo fue creado con el propocito de ser vinculado con el siguiente modelos (ciudades), el mismo fue integramente importado, utilizando la funcion migrations, debido a que las mismas no van a ser cambiadas. 
 
-         http://127.0.0.1:8000/mi-familia/alta
+b-Ciudad: tiene relacion con los modelos de provincia, donde obtiene el id de la misma, y vinculo con el alta de familia. Posee un formulario propio para ingresar previamente al alta de familia.  
+
+c-Familia: Tiene relacion con el modelo ciudad, vinculada con su id. Tiene su propio formulario, para altas. Se crea para agilizar la carga un choices.py con los sexos. 
 
 
-Formulario de busqueda: 
+ingresando en python manage.py runserver ---> http://127.0.0.1:8000/, tenemos las siguientes urls creadas:
 
-            http://127.0.0.1:8000/mi-familia/buscar
+1.admin/ ----> sin definir.
+2.saludar/ -----> se crearon diferentes link para poder acceder a las sguientes urls.
+3.mi-familia/----> Lista todo los familiares en la base de datos: En desarrollo, solo muestra Nombre, Apellido paterno y Apelllido Materno. 
+3.mi-familia/buscar ---> realiza un filtro por nombre de famliar. 
+4.mi-familia/alta---> acceso al formulario que permite incorporar nuevos familiares a la base de datos 
+5.alta-ciudad/---> acceso al formulario que permite incorporar nuevas ciudades a la base de datos. 
+
+
+
+
+
+
 
 
 
